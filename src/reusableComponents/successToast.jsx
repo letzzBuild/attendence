@@ -7,6 +7,6 @@ export default function Successtoast(msg) {
 
   return (toast.success(msg,{
     position:'top-right',
-    autoClose:3000
+    autoClose:2000
   }))
 }
