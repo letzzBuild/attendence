@@ -11,21 +11,27 @@
     width: 100%;
     height:100vh;  
 }
+
+.ChangePassPageConatiner{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .changePasswordOuterContainer{
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     color:black;
     padding: 20px;
-    background: url('../assets/background2.jpg'); 
+    /* background: url('../assets/background2.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height:100vh;  
+    */
 }
 
-.LoginDivRow,.changePasswordInnerContainer{
+.LoginDivRow{
     
     background-color: #fafafa;
     padding: 80px;
@@ -35,6 +41,16 @@
     border-radius:5px;
     margin-bottom: 100px;
     box-shadow: 10px 10px 10px #212121;
+}
+.changePasswordInnerContainer{
+    background-color: #f5f3f4;
+    padding: 80px;
+    padding-left: 100px;
+    padding-right:100px;
+    margin:40px;
+    border-radius:8px;
+    margin-bottom: 100px;
+    box-shadow: 10px 5px 10px #212121;
 }
 
 
@@ -48,4 +64,22 @@
 #forgotPass{
     text-decoration: none;
     color:#0d47a1
+}
+
+.reportHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    background-color: #f8f9fa;
+}
+.staffParentContainer{
+    background-color: #dee2e6;
+}
+
+.select-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }

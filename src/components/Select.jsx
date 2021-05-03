@@ -6,7 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 
 function SelectComponent(props) {
 
-  const {name,dropdownValues,onChange,value} = props;
+  const {name,dropdownValues,handleChange,value,onBlur,touched,error} = props;
 
     return (
         <div>
@@ -14,12 +14,15 @@ function SelectComponent(props) {
         <InputLabel id="demo-simple-select-outlined-label">{name}</InputLabel>
         <Select
           labelId="demo-simple-select-outlined-label"
-          id="demo-simple-select-outlined"
-          onChange={onChange}
+          onChange={handleChange}
           value={value}
           label="Role"
           name={name}
-          style={{width:230}}
+          style={{width:230,margin:props.margin}}
+          onBlur={onBlur}
+          error={touched && error ? true : false}
+          size={props.size}
+        
         >
           {
            dropdownValues.map((ele)=> <MenuItem value={ele} key={ele}>{ele}</MenuItem>)    

@@ -1,0 +1,40 @@
+.container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+}
+
+
+.innerContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+}
+
+.icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+}
+.fa-facebook,.fa-twitter,.fa-linkedin,.fa-google,.fa-youtube{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #AC05FF;
+    padding:10px
+    
+  }
+  li {
+    display: inline;
+    margin: 4px;
+    text-decoration: none;
+    
+  } 
+   

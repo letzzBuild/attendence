@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'PermanentMarker';
+  src: local('PermanentMarker'), url(./assets/Permanent_Marker/PermanentMarker-Regular.ttf) format('truetype');
+}

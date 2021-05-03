@@ -1,0 +1,68 @@
+.ChangePassContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.forgotPasssContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.appbar{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reportSelectionContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:baseline;
+    padding:20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.right-elements{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.good{
+    background-color:#ffd23f;
+    padding:5;
+    border-radius:4;
+    text-align: center;  
+}
+
+.excellent{
+    background-color:#a1ef7a;
+    padding:5;
+    border-radius:4;
+    text-align: center;  
+}
+
+.medium{
+    background-color:#f79d84;
+    padding:5;
+    border-radius:4;
+    text-align: center;  
+}
+.poor{
+    background-color:#ef2b2b;
+    padding:5;
+    border-radius:4;
+    text-align: center;  
+}
