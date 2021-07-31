@@ -6,82 +6,82 @@
 -- two dots ('..' - without quotes).
 
 CREATE TABLE `teachers` (
-    `faculty_id` string  NOT NULL ,
-    `Name` string  NOT NULL ,
-    `phone` string  NOT NULL ,
-    `email` string  NULL ,
+    `faculty_id` varchar(50)  NOT NULL ,
+    `Name` varchar(50)  NOT NULL ,
+    `phone` varchar(10)  NOT NULL ,
+    `email` varchar(50)  NULL ,
     PRIMARY KEY (
         `faculty_id`
     )
 );
 
 CREATE TABLE `subjects` (
-    `subject_code` string  NOT NULL ,
-    `subject_name` string  NOT NULL ,
+    `subject_code` varchar(50)  NOT NULL ,
+    `subject_name` varchar(50)  NOT NULL ,
     PRIMARY KEY (
         `subject_code`
     )
 );
 
 CREATE TABLE `branches` (
-    `branch_id` string  NOT NULL ,
-    `branch_name` string  NOT NULL ,
-    `hod_id` string  NOT NULL ,
+    `branch_id` varchar(50)  NOT NULL ,
+    `branch_name` varchar(50)  NOT NULL ,
+    `hod_id` varchar(50)  NOT NULL ,
     PRIMARY KEY (
         `branch_id`
     )
 );
 
 CREATE TABLE `users` (
-    `username` string  NOT NULL ,
-    `password` string  NOT NULL ,
-    `role` string  NOT NULL 
+    `username` varchar(50)  NOT NULL ,
+    `password` varchar(50)  NOT NULL ,
+    `role` varchar(50)  NOT NULL 
 );
 
 CREATE TABLE `divisions` (
-    `div_name` string  NOT NULL ,
-    `div_code` string  NOT NULL ,
-    `branch_id` string  NOT NULL ,
-    `sem` string  NOT NULL ,
+    `div_name` varchar(50)  NOT NULL ,
+    `div_code` varchar(50)  NOT NULL ,
+    `branch_id` varchar(50)  NOT NULL ,
+    `sem` varchar(50)  NOT NULL ,
     PRIMARY KEY (
         `div_code`
     )
 );
 
 CREATE TABLE `mentors` (
-    `name` string  NOT NULL ,
-    `mentor_id` string  NOT NULL ,
-    `email` string  NOT NULL ,
-    `phone` string  NOT NULL 
+    `name` stvarchar(50)ring  NOT NULL ,
+    `mentor_id` varchar(50)  NOT NULL ,
+    `email` varchar(50)  NOT NULL ,
+    `phone` varchar(50)  NOT NULL 
 );
 
 CREATE TABLE `students` (
-    `name` string  NOT NULL ,
-    `usn` string  NOT NULL ,
-    `sem` string  NOT NULL ,
-    `branch_id` string  NOT NULL ,
-    `div_id` string  NOT NULL ,
-    `mobile` string  NOT NULL ,
-    `email` string  NOT NULL ,
-    `mentor_id` string  NOT NULL ,
+    `name` varchar(50)  NOT NULL ,
+    `usn` varchar(50)  NOT NULL ,
+    `sem` varchar(50)  NOT NULL ,
+    `branch_id` varchar(50)  NOT NULL ,
+    `div_id` varchar(50)  NOT NULL ,
+    `mobile` varchar(50)  NOT NULL ,
+    `email` varchar(50)  NOT NULL ,
+    `mentor_id` varchar(50)  NOT NULL ,
     PRIMARY KEY (
         `usn`
     )
 );
 
 CREATE TABLE `subjects_taken` (
-    `subject_code` string  NOT NULL ,
-    `faculty_id` string  NOT NULL ,
-    `sem` string  NOT NULL ,
-    `branch_id` string  NOT NULL 
+    `subject_code` varchar(50)  NOT NULL ,
+    `faculty_id` varchar(50)  NOT NULL ,
+    `sem` varchar(50)  NOT NULL ,
+    `branch_id` varchar(50)  NOT NULL 
 );
 
 CREATE TABLE `attendence` (
-    `usn` string  NOT NULL ,
-    `sem` string  NOT NULL ,
-    `div_id` string  NOT NULL ,
-    `branch_id` string  NOT NULL ,
-    `faculty_id` string  NOT NULL ,
+    `usn` varchar(50)  NOT NULL ,
+    `sem` varchar(50)  NOT NULL ,
+    `div_id` varchar(50)  NOT NULL ,
+    `branch_id` varchar(50)  NOT NULL ,
+    `faculty_id` varchar(50)  NOT NULL ,
     `timestamp` datetime  NOT NULL ,
     `status` bool  NOT NULL 
 );
